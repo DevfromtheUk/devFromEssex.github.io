@@ -2,4 +2,27 @@
     background: black;
     color: white;
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 500px;
+    grid-template-areas: "nav nav nav nav";
+  }
+  
+  .nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 22%;
+    grid-template-areas: ". Home About Work Contact .";
+    grid-area: nav;
+  }
+  
+  .Home { grid-area: Home; }
+  
+  .About { grid-area: About; }
+  
+  .Work { grid-area: Work; }
+  
+  .Contact { grid-area: Contact; }
     
