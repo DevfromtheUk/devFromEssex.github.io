@@ -1,24 +1,28 @@
 * {
-    background: black;
     color: white;
     margin: 0;
     padding: 0;
 }
 
-table{
-    margin: 20px 0 0 0 ;
-    width: 100%;
+body {
+    background-image: url("images/backdrop.jpeg");;
+    background-size: 100% 1000px;
+    height: 200%;
+}
+
+table {
+    width: 99%;
     height: 100px;
     border-collapse: collapse;
 }
 
 table tr td{
-    background: white;
+    background: rgba(255, 255, 255, 0.6);
     color: black;
 }
 
 .nav-header {
-    background: white;
+    background: rgba(255, 255, 255, 0);
     color: black;
     margin-left: 10px;
 }
@@ -33,11 +37,30 @@ table tr td{
 
 .whitespace-table2 {
     width: auto;
+    text-align: center;
+    font-family: Helvetica, Arial,  sans-serif;
+    
 }
 
 .content-nav {
-    width: 10%;
+    width: 12.5%;
     text-align: center;
     font-family: Helvetica, Arial,  sans-serif;
 }
 
+.content-nav a {
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-family: Helvetica, Arial,  sans-serif;
+}
+
+.intro {
+    background: rgba(255, 255, 255, 0.6);
+    margin: 150px auto 0 auto;
+    width: 45%;
+    height: 750px;
+    color: black;
+    padding: 10px 10px 0 10px;
+    font-size: 25px;
+}
