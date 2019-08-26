@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap');
+
 * {
     color: white;
     margin: 0;
@@ -24,7 +26,7 @@ table tr td{
 .nav-header {
     background: rgba(255, 255, 255, 0);
     color: black;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 .colspan-15 {
@@ -38,21 +40,25 @@ table tr td{
 .whitespace-table2 {
     width: auto;
     text-align: center;
-    font-family: Helvetica, Arial,  sans-serif;
-    
+    font-family: 'Lexend Deca',  sans-serif;
+    font-size: 25px;
+    text-shadow: 0.5px 0.25px white;
 }
+
 
 .content-nav {
     width: 12.5%;
     text-align: center;
-    font-family: Helvetica, Arial,  sans-serif;
+    text-decoration: none;
+    font-family: 'Lexend Deca',  sans-serif;
+    font-size: 18px;
+    text-shadow: 0.5px 0.25px white;
 }
 
-.content-nav a {
+.content-nav #navbar {
     color: black;
     text-decoration: none;
-    text-align: center;
-    font-family: Helvetica, Arial,  sans-serif;
+
 }
 
 .intro {
@@ -63,4 +69,5 @@ table tr td{
     color: black;
     padding: 10px 10px 0 10px;
     font-size: 25px;
+    text-shadow: 0.5px 0.25px white;
 }
