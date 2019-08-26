@@ -2,7 +2,7 @@
 <html>
 <head>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    
     <title> Chris F Portfolio - Home</title>
 </head>
 <body>
@@ -20,13 +20,32 @@
         </table>
     </nav>
     <section>
-        <p class="intro">
+        <p id="intro">
             Hi. I'm a student from Essex (hence the name) who has a wide knowledge of Front-end development skills. 
             I can create and redesign websites in full, web templates, shopify stores, email templates and more. 
             All my work costs nothing (though if your satisfied i won't say no to a small donation!) and goes onto
             my portfolio for when i finish my education. This site has some of my information, work and contact details
-            if your interested or want to have a chat about any oppurtunities. Feel free to look around!
+            if your interested or want to have a chat about any oppurtunities. Feel free to look around!<br><br>
+            Every 15 seconds this text will change to a random piece of information!
         </p>
+        
     </section>
+    <script>
+        var text = ["I Know Html, CSS and Python, as well as good knowledge of Javascript including jQuery. I also know a little C# from game development in Unity, and Visual Basic Forms because we had to use it for Gsce unfortuantly.",
+                    "I use GitHub for the majority of my projects, since it works so easily with Visual Studio. From time to time though i use CodePen for it's pure simplicity and easy testing.",
+                    "In my spare time I game (Forza Horizon 4, Battlefield V, Fifa 19 and a huge lover of the Pokemon series) and play Football and cricket when i get the chnace!"];
+        var counter = 0;
+        var elem = document.getElementById("intro");
+        var inst = setInterval(change, 15000);
+        
+        function change() {
+          elem.innerHTML = text[counter];
+          counter++;
+          if (counter >= text.length) {
+            counter = 0;
+            // clearInterval(inst); // uncomment this if you want to stop refreshing after one cycle
+          }
+        }
+    </script>
 </body>
 </html>
